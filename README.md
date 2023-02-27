@@ -5,5 +5,5 @@ Fix the bundle links of Lethal League Blaze. Necessary for some character moddin
 | :---: | :---: | :---: |
 | Nitro | Cuff wrong link | ✓ |
 | Candyman | Running Legs wrong link |  |
-| Doombox | *Separate Bundles in 2* |  |
-| Dust & Ashes | *Separate Bundles in 2* |  |
+| Doombox | *Separate Bundle in 2* |  |
+| Dust & Ashes | *Separate Bundle in 2* |  |
