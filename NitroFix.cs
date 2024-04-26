@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using LLHandlers;
 using GameplayEntities;
@@ -58,26 +56,37 @@ namespace BundleFix {
                 // Assign the cuffHolder
                 cuffHolder = holderBalls.GetChild(a).Find(target).gameObject;
 
-                // Hide Old Cuff
-                foreach (Transform child in cuffHolder.transform) {
-                    child.gameObject.SetActive(false);
-                }
-
                 // Add Custom Cuff
                 for (int b = 0; b < BundleHandler.assetReferences["characters/cop"].Length; b++) {
+                    // Search the Cuff
                     if (BundleHandler.assetReferences["characters/cop"][b].name == value) {
+                        // Hide Old Cuff
+                        foreach (Transform child in cuffHolder.transform) {
+                            child.gameObject.SetActive(false);
+                        }
+
+                        // Reference
                         cuffReference = BundleHandler.assetReferences["characters/cop"][b] as GameObject;
 
                         // Instantiate, change Material, set Layer
                         GameObject _cuff = Instantiate(cuffReference, cuffHolder.transform);
-                        Material _mat = GameObject.Find("holderPlayers/copPlayer/main/buntEffect").GetComponent<SkinnedMeshRenderer>().material;
-                        _cuff.transform.GetChild(0).GetComponent<MeshRenderer>().material = _mat;
                         BundleFixPlugin.SetLayerAllChildren(_cuff.transform, 8);
+                        Material _mat = GameObject.Find("holderPlayers/copPlayer/main/buntEffect").GetComponent<SkinnedMeshRenderer>().materials[0];
+                        _cuff.transform.GetChild(0).GetComponent<SkinnedMeshRenderer>().material = _mat;
+
+                        // Stop the search
+                        BundleFixPlugin.log($"Nitro {cuffHolder.name}.{target} have been replaced for Player {playerSpot}");
+                        break;
+                    }
+
+                    // If it doesn't find the Cuff
+                    if (b == BundleHandler.assetReferences["characters/cop"].Length - 1) {
+                        // For now, do nothing ...
+                        /// Issue: Original Nitro bundle doesn't have a "cuff", so BundleFix can't fix it which is annoying.
+                        /// But is there anything to fix if you play OG Nitro ?
                     }
                 }
             }
-
-            BundleFixPlugin.log($"Nitro {target} have been replaced for Player {playerSpot}");
         }
     }
 }

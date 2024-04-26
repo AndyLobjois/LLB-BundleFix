@@ -5,3 +5,9 @@ D:\Andy\Projets\LLB MOD\2. Repositories\Mods\LLB-BundleFix\obj\Debug\LLB-BundleF
 D:\Andy\Projets\LLB MOD\2. Repositories\Mods\LLB-BundleFix\obj\Debug\LLB-BundleFix.csproj.CopyComplete
 D:\Andy\Projets\LLB MOD\2. Repositories\Mods\LLB-BundleFix\obj\Debug\BundleFix.dll
 D:\Andy\Projets\LLB MOD\2. Repositories\Mods\LLB-BundleFix\obj\Debug\BundleFix.pdb
+C:\Program Files (x86)\Steam\steamapps\common\LLBlaze\BepInEx\plugins\LLB-BundleFix\BundleFix.dll
+C:\Program Files (x86)\Steam\steamapps\common\LLBlaze\BepInEx\plugins\LLB-BundleFix\BundleFix.pdb
+C:\Users\HELLGRIM-PC\Projets\LLB MOD\2. Repositories\Mods\LLB-BundleFix\obj\Debug\LLB-BundleFix.csproj.AssemblyReference.cache
+C:\Users\HELLGRIM-PC\Projets\LLB MOD\2. Repositories\Mods\LLB-BundleFix\obj\Debug\LLB-BundleFix.csproj.CoreCompileInputs.cache
+C:\Users\HELLGRIM-PC\Projets\LLB MOD\2. Repositories\Mods\LLB-BundleFix\obj\Debug\BundleFix.dll
+C:\Users\HELLGRIM-PC\Projets\LLB MOD\2. Repositories\Mods\LLB-BundleFix\obj\Debug\BundleFix.pdb
